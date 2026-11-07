@@ -283,11 +283,10 @@ The objective isn't to rush through the list.
 The objective is to turn each stage into real technical evidence.
 
 ## 📫 Connect
-LinkedIn: Abhinav Pratap Singh
-GitHub: Mr-Unforgettable
+LinkedIn: [Abhinav Pratap Singh](https://www.linkedin.com/in/abhinav-p-singh/)
+GitHub: [Mr-Unforgettable](https://github.com/Mr-Unforgettable)
 <p align="center">
 
 Building. Investigating. Learning. Improving.
 One security problem at a time.
 </p>
-```
