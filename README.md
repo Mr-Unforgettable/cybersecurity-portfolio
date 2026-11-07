@@ -266,7 +266,7 @@ The current roadmap is intentionally hands-on:
         ↓
 ✅ Brutus — SSH Investigation
         ↓
-🔄 HawkEye — Network Forensics
+✅ HawkEye — Network Forensics
         ↓
 🔄 SIEM Correlation Rules
         ↓
