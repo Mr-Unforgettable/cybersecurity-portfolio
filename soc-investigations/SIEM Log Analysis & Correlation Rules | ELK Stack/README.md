@@ -67,7 +67,7 @@ siem-correlation-project/
 
 The detailed internship project report, including architecture, implementation steps, validation results, screenshots, limitations, and conclusions, is available here:
 
-**[SIEM Internship Project Report (PDF)](report/SIEM_Internship_Project_Report.pdf)**
+**[SIEM Custom Correlation Rule (PDF)](SIEM_Task2_Report.pdf)**
 
 ## Important Notes
 
