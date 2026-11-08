@@ -90,6 +90,24 @@ Currently exploring
 
 📂 [View the HawkEye Investigation →](./soc-investigations/hawkeye/)
 
+## 🛡️ Custom SIEM Correlation Rules — ELK Stack
+Focus: SIEM Engineering · Elasticsearch · Logstash · Kibana · Log Analysis · Detection Engineering
+
+Built and tested custom SIEM detection logic using the ELK Stack to identify simulated credential stuffing, DNS tunnelling, and suspicious PowerShell activity through structured security event analysis.
+
+Currently exploring
+- SIEM architecture and log ingestion
+- Elasticsearch indexing and querying
+- Logstash pipelines and event processing
+- Kibana Discover and security event analysis
+- Credential stuffing detection
+- DNS tunnelling indicators
+- Suspicious PowerShell activity
+- Detection rule validation
+- Security event investigation and reporting
+
+📂 [View the Custom SIEM Correlation Project →](./soc-investigations/siem-correlation/)
+
 ## 🛡️ SOC & Detection Engineering
 I'm currently extending these investigations into a broader SOC-focused project involving:
 
@@ -268,7 +286,7 @@ The current roadmap is intentionally hands-on:
         ↓
 ✅ HawkEye — Network Forensics
         ↓
-🔄 SIEM Correlation Rules
+✅ SIEM Correlation Rules
         ↓
 🔄 SOC Dashboard
         ↓
