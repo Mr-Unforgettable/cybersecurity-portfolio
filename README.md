@@ -106,7 +106,7 @@ Currently exploring
 - Detection rule validation
 - Security event investigation and reporting
 
-📂 [View the Custom SIEM Correlation Project →](./soc-investigations/siem-correlation/)
+📂 [View the Custom SIEM Correlation Project →](./soc-investigations/SIEM%20Log%20Analysis%20%26%20Correlation%20Rules%20%7C%20ELK%20Stack/))
 
 ## 🛡️ SOC & Detection Engineering
 I'm currently extending these investigations into a broader SOC-focused project involving:
