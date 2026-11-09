@@ -137,7 +137,7 @@ Designed and implemented a custom Kibana dashboard using the ELK Stack to visual
 
 All attack-related events and transfer volumes are synthetic lab data. No real attacks were performed and no actual data was exfiltrated.
 
-📂 [View the Custom SIEM Dashboard Project →](./soc-investigations/custom-siem-dashboard/)
+📂 [View the Custom SIEM Dashboard Project →](./soc-investigations/siem%20dashboard/)
 
 ## 🧪 Hands-On Learning
 
