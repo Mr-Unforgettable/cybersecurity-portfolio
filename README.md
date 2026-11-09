@@ -36,12 +36,15 @@ I'm building a practical cybersecurity portfolio around four areas:
             SECURITY PROJECTS
 ```
 
-##🔍 Cybersecurity Investigations
+## 🔍 Cybersecurity Investigations
 
-## 🖥️ Brutus — Linux SSH Attack Investigation
-Focus: Linux Log Analysis · SSH · Incident Investigation · utmp/wtmp · Timeline Reconstruction
+### 🖥️ Brutus — Linux SSH Attack Investigation
+
+**Focus:** Linux Log Analysis · SSH · Incident Investigation · utmp/wtmp · Timeline Reconstruction
+
 Investigated a simulated SSH compromise by analyzing authentication logs and Linux session artifacts.
-What I investigated
+
+**What I investigated**
 - SSH brute-force activity
 - Suspicious source IP identification
 - Successful root authentication
@@ -52,8 +55,8 @@ What I investigated
 - Privileged activity
 - MITRE ATT&CK mapping
 
-### Investigation path
-```
+**Investigation path**
+```text
 Raw authentication logs
         ↓
 SSH activity filtering
@@ -75,10 +78,13 @@ Post-compromise analysis
 
 📂 [View the Brutus Investigation →](./soc-investigations/brutus/)
 
-## 🌐 HawkEye — Network Forensics
-Focus: Network Forensics · Wireshark · PCAP Analysis · IOC Extraction
+### 🌐 HawkEye — Network Forensics
+
+**Focus:** Network Forensics · Wireshark · PCAP Analysis · IOC Extraction
+
 Hands-on investigation of a simulated HawkEye keylogger data-exfiltration incident using network traffic analysis.
-Currently exploring
+
+**Currently exploring**
 - PCAP analysis
 - DNS investigation
 - HTTP traffic
@@ -90,69 +96,55 @@ Currently exploring
 
 📂 [View the HawkEye Investigation →](./soc-investigations/hawkeye/)
 
-## 🛡️ Custom SIEM Correlation Rules — ELK Stack
-Focus: SIEM Engineering · Elasticsearch · Logstash · Kibana · Log Analysis · Detection Engineering
+## 🛡️ SIEM & Detection Engineering
 
-Built and tested custom SIEM detection logic using the ELK Stack to identify simulated credential stuffing, DNS tunnelling, and suspicious PowerShell activity through structured security event analysis.
+### Custom SIEM Correlation Rules — ELK Stack
 
-Currently exploring
+**Focus:** SIEM Engineering · Elasticsearch · Logstash · Kibana · Log Analysis · Detection Engineering
+
+Built and tested custom SIEM detection logic using the ELK Stack to identify simulated credential stuffing, DNS tunnelling, and suspicious PowerShell activity through structured security-event analysis.
+
+**Work covered**
 - SIEM architecture and log ingestion
 - Elasticsearch indexing and querying
 - Logstash pipelines and event processing
-- Kibana Discover and security event analysis
-- Credential stuffing detection
-- DNS tunnelling indicators
+- Kibana Discover and security-event analysis
+- Credential-stuffing detection logic
+- DNS-tunnelling indicators
 - Suspicious PowerShell activity
-- Detection rule validation
-- Security event investigation and reporting
+- Detection-rule validation
+- Security-event investigation and reporting
 
-📂 [View the Custom SIEM Correlation Project →](./soc-investigations/SIEM%20Log%20Analysis%20%26%20Correlation%20Rules%20%7C%20ELK%20Stack/))
+📂 [View the Custom SIEM Correlation Project →](./soc-investigations/SIEM%20Log%20Analysis%20%26%20Correlation%20Rules%20%7C%20ELK%20Stack/)
 
-## 🛡️ SOC & Detection Engineering
-I'm currently extending these investigations into a broader SOC-focused project involving:
+### Custom SIEM Security Dashboard — ELK Stack
 
-### SIEM
-- ELK
-- Security Onion
-- Log collection
-- Event correlation
-- Detection rules
-- Security dashboards
-- 
-### Detection
-Working toward detection logic for:
-```
-SSH brute force
-Credential attacks
-DNS tunneling
-PowerShell abuse
-Privilege escalation
-Data exfiltration
-Incident Response
-```
+**Focus:** SIEM Dashboards · Elasticsearch · Logstash · Kibana Lens · Security Monitoring
 
-### Exploring the workflow:
-```
-Detect
-  ↓
-Investigate
-  ↓
-Correlate
-  ↓
-Scope
-  ↓
-Identify IOCs
-  ↓
-Build Timeline
-  ↓
-Respond
-  ↓
-Document
-```
+Designed and implemented a custom Kibana dashboard using the ELK Stack to visualize three categories of synthetic security events. The dashboard uses a dedicated Logstash ingestion pipeline and an Elasticsearch index for the Task 6 dataset.
+
+**Dashboard coverage**
+- **Brute-force attempts:** visualized 25 simulated failed-login events from source IP `203.0.113.45`.
+- **Privilege escalation:** visualized 12 simulated process-start events and 8 privileged group-membership changes.
+- **Potential data exfiltration:** aggregated approximately 1.23 GB of simulated outbound-transfer activity to `198.51.100.25`.
+
+**Implementation work**
+- Generated a 96-event synthetic security dataset: 30 normal events, 26 brute-force simulation events, 20 privilege-escalation events, and 20 exfiltration events.
+- Configured a separate Logstash pipeline for Task 6 ingestion.
+- Indexed the events in Elasticsearch and verified the 96 documents in Kibana Discover.
+- Created a Kibana data view and three Lens visualizations.
+- Combined the visualizations into the dashboard **Task 6 - Custom SIEM Security Dashboard**.
+
+All attack-related events and transfer volumes are synthetic lab data. No real attacks were performed and no actual data was exfiltrated.
+
+📂 [View the Custom SIEM Dashboard Project →](./soc-investigations/custom-siem-dashboard/)
 
 ## 🧪 Hands-On Learning
+
 I learn best by investigating problems rather than simply consuming tutorials.
+
 Current practice includes:
+
 | Area | Hands-on Work |
 |---|---|
 | 🐧 Linux | Permissions, SUID/SGID, processes, logs |
@@ -164,25 +156,48 @@ Current practice includes:
 | 💻 Secure Development | Authentication & access-control analysis |
 | ☁️ Cloud Security | AWS security fundamentals |
 
-
 ## 🧰 Technical Toolkit
-Security
-Linux Wireshark SIEM Network Forensics
-Vulnerability Assessment Security Analysis
-MITRE ATT&CK Incident Investigation
-Development
-TypeScript JavaScript Python
-Node.js Express REST APIs
-Databases
-MySQL MongoDB MSSQL SingleStore
-Infrastructure & Tools
-Git Docker VMware AWS
-JMeter NeoLoad
+
+**Security**
+- Linux
+- Wireshark
+- SIEM
+- Network Forensics
+- Vulnerability Assessment
+- Security Analysis
+- MITRE ATT&CK
+- Incident Investigation
+
+**Development**
+- TypeScript
+- JavaScript
+- Python
+- Node.js
+- Express
+- REST APIs
+
+**Databases**
+- MySQL
+- MongoDB
+- MSSQL
+- SingleStore
+
+**Infrastructure & Tools**
+- Git
+- Docker
+- VMware
+- AWS
+- JMeter
+- NeoLoad
 
 ## 💻 Software Engineering Background
+
 Before focusing more deeply on cybersecurity, I worked in backend/software engineering.
-Programmer Analyst — Cognizant
+
+**Programmer Analyst — Cognizant**
+
 Worked on backend performance analysis and enterprise production systems.
+
 Some of the work involved:
 - Performance testing
 - JMeter
@@ -190,12 +205,17 @@ Some of the work involved:
 - High-concurrency simulation
 - Root-cause analysis
 - Backend systems
+
 This background influences how I approach security:
-Understand the system first. Then investigate how it can fail or be abused.
+
+**Understand the system first. Then investigate how it can fail or be abused.**
 
 ## 🔐 Security Experience
-Cybersecurity Internship — Virtually Testing Foundation
+
+**Cybersecurity Internship — Virtually Testing Foundation**
+
 Hands-on vulnerability analysis across security labs and isolated VMware/AWS environments.
+
 Experience included:
 - Vulnerability analysis
 - Security lab investigation
@@ -203,44 +223,61 @@ Experience included:
 - Findings documentation
 
 ## 📚 Certifications & Learning
+
 - AWS Educate — Security
 - Virtually Testing Foundation — Cybersecurity Internship
 - Data Structures & Algorithms
 - Ongoing hands-on security labs
 
 ## 📂 Portfolio Structure
+
 This repository is intentionally organized around evidence of practical work, rather than simply listing technologies.
-```
+
+```text
 .
 ├── soc-investigations/
 │   ├── brutus/
 │   │   ├── README.md
 │   │   └── report.pdf
 │   │
-│   └── hawkeye/
+│   ├── hawkeye/
+│   │   ├── README.md
+│   │   └── report.pdf
+│   │
+│   ├── SIEM Log Analysis & Correlation Rules | ELK Stack/
+│   │   └── ...
+│   │
+│   └── custom-siem-dashboard/
 │       ├── README.md
-│       └── report.pdf
+│       ├── report/
+│       │   └── Task_6_Custom_SIEM_Dashboard_Report_with_Screenshots.pdf
+│       ├── screenshots/
+│       │   └── task6/
+│       ├── data/
+│       ├── scripts/
+│       └── logstash/
 │
-├── siem/
-│   ├── detection-rules/
-│   └── dashboards/
-│
-└── projects/
-    └── ...
-Each investigation aims to contain:
-Investigation
-     +
-Evidence
-     +
-Reasoning
-     +
-Report
-     +
-Lessons Learned
+└── ...
+```
+
+Each investigation or project aims to contain:
+
+```text
+Investigation / Implementation
+             +
+          Evidence
+             +
+          Reasoning
+             +
+           Report
+             +
+       Lessons Learned
 ```
 
 ## 🎯 Career Direction
+
 I'm currently exploring cybersecurity roles where I can combine my software-engineering background with security investigation and defensive security work.
+
 Areas I'm particularly interested in:
 - SOC / Security Operations
 - Security Analysis
@@ -249,21 +286,28 @@ Areas I'm particularly interested in:
 - Vulnerability Assessment
 - Application Security
 - Cloud Security
+
 I'm deliberately using hands-on work to discover which of these areas I want to specialize in rather than choosing a specialization purely from job titles.
 
 ## 📈 Current Focus
+
 - [████████░░] Cybersecurity Foundations
 - [██████░░░░] SOC / Detection
 - [██████░░░░] Network Forensics
 - [████░░░░░░] Incident Response
-- [████░░░░░░] SIEM Engineering
+- [██████░░░░] SIEM Engineering
 - [████░░░░░░] Cloud Security
+
 These bars represent my current learning focus, not claimed proficiency.
 
 ## 🧠 My Learning Philosophy
-I don't want to optimize for looking knowledgeable.
+
+I don't want to optimize for looking knowledgeable.  
 I want to optimize for becoming capable.
+
 When I don't know something, the goal is:
+
+```text
 "I don't know."
       ↓
 "My current hypothesis is..."
@@ -275,11 +319,15 @@ When I don't know something, the goal is:
 "Does the evidence support my hypothesis?"
       ↓
 "Update my understanding."
+```
+
 That mindset is becoming the foundation of how I approach cybersecurity.
 
 ## 🚀 What's Next
+
 The current roadmap is intentionally hands-on:
-```
+
+```text
 ✅ Linux / Security Fundamentals
         ↓
 ✅ Brutus — SSH Investigation
@@ -288,7 +336,7 @@ The current roadmap is intentionally hands-on:
         ↓
 ✅ SIEM Correlation Rules
         ↓
-🔄 SOC Dashboard
+✅ Custom SIEM Security Dashboard
         ↓
 🔄 APT Simulation
         ↓
@@ -297,14 +345,15 @@ The current roadmap is intentionally hands-on:
 🎯 Build a stronger cybersecurity portfolio
 ```
 
-The objective isn't to rush through the list.
+The objective isn't to rush through the list.  
 The objective is to turn each stage into real technical evidence.
 
 ## 📫 Connect
-LinkedIn: [Abhinav Pratap Singh](https://www.linkedin.com/in/abhinav-p-singh/)
-GitHub: [Mr-Unforgettable](https://github.com/Mr-Unforgettable)
-<p align="center">
 
-Building. Investigating. Learning. Improving.
-One security problem at a time.
+- LinkedIn: [Abhinav Pratap Singh](https://www.linkedin.com/in/abhinav-p-singh/)
+- GitHub: [Mr-Unforgettable](https://github.com/Mr-Unforgettable)
+
+<p align="center">
+  Building. Investigating. Learning. Improving.<br/>
+  One security problem at a time.
 </p>
